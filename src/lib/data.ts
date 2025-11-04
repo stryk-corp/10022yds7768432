@@ -24,7 +24,7 @@ export const stats = [
 ];
 
 export const leadership = [
-  { name: 'FCT Minister', title: '—', imageId: 'leadership_6' },
+  { name: 'Ezenwo Nyesom Wike', title: 'FCT Minister', imageId: 'leadership_6' },
   { name: 'FCT Minister of State', title: '—', imageId: 'leadership_7' },
   { name: 'Hon. Ango Abdullahi Suleiman', title: 'Mandate Secretary', imageId: 'leadership_1' },
   { name: 'Mrs. Nathan Nancy', title: 'Permanent Secretary', imageId: 'leadership_2' },
