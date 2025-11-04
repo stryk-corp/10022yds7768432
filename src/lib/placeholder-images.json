@@ -8,9 +8,9 @@
     },
     {
       "id": "hero_bg",
-      "description": "Skyline of Abuja for hero background",
-      "imageUrl": "https://images.unsplash.com/photo-1722336761132-8640cca768a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnVqYSUyMGNpdHklMjBza3lsaW5lfGVufDB8fHx8MTc2MjI5MjQyNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abuja city skyline"
+      "description": "FCT-Abuja City Gate",
+      "imageUrl": "https://raw.githubusercontent.com/stryk-corp/img-repo/refs/heads/main/FCT-Abuja%20City%20Gate.jpg",
+      "imageHint": "abuja city gate"
     },
     {
       "id": "leadership_1",
