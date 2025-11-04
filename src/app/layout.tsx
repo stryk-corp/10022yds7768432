@@ -2,10 +2,16 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import { cn } from '@/lib/utils';
+import { getImage } from '@/lib/data';
+
+const fctaLogo = getImage('fcta_logo');
 
 export const metadata: Metadata = {
   title: 'FCT Youth Connect',
   description: "Empowering Tomorrow's Leaders Today in the Federal Capital Territory",
+  icons: {
+    icon: fctaLogo?.imageUrl || '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
