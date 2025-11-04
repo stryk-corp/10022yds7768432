@@ -21,7 +21,7 @@ const TopBar = () => (
             alt={fctaLogo.description}
             width={40}
             height={40}
-            className="h-10 w-10 object-contain"
+            className="h-10 w-10 rounded-full object-cover"
             data-ai-hint={fctaLogo.imageHint}
           />
         )}
@@ -53,7 +53,7 @@ const MainNav = () => (
               alt={fctaLogo.description}
               width={32}
               height={32}
-              className="h-8 w-8"
+              className="h-8 w-8 rounded-full object-cover"
               data-ai-hint={fctaLogo.imageHint}
             />
           )}
@@ -95,7 +95,7 @@ const MobileMenu = () => (
               alt={fctaLogo.description}
               width={32}
               height={32}
-              className="h-8 w-8"
+              className="h-8 w-8 rounded-full object-cover"
               data-ai-hint={fctaLogo.imageHint}
             />
           )}
