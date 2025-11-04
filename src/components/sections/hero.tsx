@@ -10,7 +10,7 @@ const QuickActions = () => (
   <div className="mt-8 w-full md:mt-0 md:w-[420px] bg-black/10 backdrop-blur-md border border-white/10 rounded-xl p-6 shadow-lg">
     <h3 className="text-white font-semibold mb-3">Quick Actions</h3>
     <div className="grid grid-cols-1 gap-3">
-      <Button asChild variant="secondary" className="justify-start bg-white/95 text-primary hover:bg-white">
+      <Button asChild variant="secondary" className="justify-start bg-white/95 text-primary hover:bg-white h-auto whitespace-normal text-left">
         <Link href="#register">Register Your Youth Organisation</Link>
       </Button>
       <Button asChild variant="secondary" className="justify-start bg-white/20 text-white hover:bg-white/30">
