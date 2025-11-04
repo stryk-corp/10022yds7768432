@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
@@ -9,18 +11,24 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { mediaItems } from '@/lib/data';
+import Autoplay from 'embla-carousel-autoplay';
 
 export default function MediaCenter() {
+  const plugin = React.useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+
   return (
     <section id="media" className="bg-muted/50 py-16 lg:py-24">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-primary mb-8 text-center">Media Center</h2>
         <Carousel
+          plugins={[plugin.current]}
           opts={{
             align: 'start',
             loop: true,
           }}
           className="w-full"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
         >
           <CarouselContent>
             {mediaItems.map((item, index) => (
