@@ -14,7 +14,7 @@ import { mediaItems } from '@/lib/data';
 import Autoplay from 'embla-carousel-autoplay';
 
 export default function MediaCenter() {
-  const plugin = React.useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = React.useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
 
   return (
     <section id="media" className="bg-muted/50 py-16 lg:py-24">
