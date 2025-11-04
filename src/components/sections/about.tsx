@@ -65,7 +65,7 @@ export default function About() {
             data-ai-hint={aboutContentBg.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-background/90 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
         <div className="relative z-10 container mx-auto px-4">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
             <div className="lg:col-span-2">
