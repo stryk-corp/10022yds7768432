@@ -42,7 +42,7 @@ export default function About() {
           <div className="lg:col-span-2">
             <h2 className="text-3xl font-bold text-primary mb-6">About the Secretariat</h2>
             <p className="text-lg leading-relaxed text-foreground/80">
-              The FCT Youth & Sports Development Secretariat (FCTASDS) coordinates youth and sports initiatives across the Federal Capital Territory. Established to deliver inclusive programs, the Secretariat focuses on youth entrepreneurship, skills development, sports excellence and civic engagement.
+              The FCT Youth & Sports Development Secretariat (FCTAYDS) coordinates youth and sports initiatives across the Federal Capital Territory. Established to deliver inclusive programs, the Secretariat focuses on youth entrepreneurship, skills development, sports excellence and civic engagement.
             </p>
 
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">

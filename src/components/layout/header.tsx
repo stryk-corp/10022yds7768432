@@ -57,7 +57,7 @@ const MainNav = () => (
               data-ai-hint={fctaLogo.imageHint}
             />
           )}
-          <span className="font-bold text-primary text-lg">FCTASDS</span>
+          <span className="font-bold text-primary text-lg">FCTAYDS</span>
         </Link>
         <div className="hidden items-center gap-2 text-sm md:flex">
           {navLinks.map((link) => (
@@ -99,7 +99,7 @@ const MobileMenu = () => (
               data-ai-hint={fctaLogo.imageHint}
             />
           )}
-          <span className="font-bold text-primary text-lg">FCTASDS</span>
+          <span className="font-bold text-primary text-lg">FCTAYDS</span>
         </Link>
         {navLinks.map((link) => (
           <Link
