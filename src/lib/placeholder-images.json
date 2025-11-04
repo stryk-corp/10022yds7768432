@@ -62,9 +62,9 @@
     },
     {
       "id": "leadership_7",
-      "description": "Portrait of FCT Minister of State",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjIyMTM5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "portrait man"
+      "description": "Portrait of FCT Minister of State Mariya Mahmoud Bunkure",
+      "imageUrl": "https://raw.githubusercontent.com/stryk-corp/img-repo/refs/heads/main/The-FCT-Minister-of-State-Dr-Mahmoud-Mariya.png",
+      "imageHint": "portrait woman"
     },
     {
       "id": "media_1",
@@ -75,25 +75,25 @@
     {
       "id": "media_2",
       "description": "Photo from a sports program",
-      "imageUrl": "https://images.unsplash.com/photo-1490326149782-dd42fa59bd9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx5b3V0aCUyMHNwb3J0c3xlbnwwfHx8fDE3NjIyOTI0MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1490326149782-dd42fa59bd9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx5b3V0aCUyMHNwb3J0c3xlbnwwfHx8fDE3NjIyOTI0MjZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "youth sports"
     },
     {
       "id": "media_3",
       "description": "Photo from a workshop",
-      "imageUrl": "https://images.unsplash.com/photo-1505845753232-f74a87b62db6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b3Jrc2hvcCUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzYyMjkyNDI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1505845753232-f74a87b62db6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b3Jrc2hvcCUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzYyMjkyNDI2fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "workshop conference"
     },
     {
       "id": "media_4",
       "description": "Photo from a community outreach",
-      "imageUrl": "https://images.unsplash.com/photo-1566930000176-fdb48dee82d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx2b2x1bnRlZXJzJTIwd29ya2luZ3xlbnwwfHx8fDE3NjIyOTI0MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1566930000176-fdb48dee82d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx2b2x1bnRlZXJzJTIwd29ya2luZ3xlbnwwfHx8fDE3NjIyOTI0MjZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "volunteers working"
     },
     {
       "id": "media_5",
       "description": "Photo from an awards ceremony",
-      "imageUrl": "https://images.unsplash.com/photo-1656761961819-7c868b11b2d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhd2FyZCUyMGNlcmVtb255fGVufDB8fHx8MTc2MjI1NDk4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1656761961819-7c868b11b2d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhd2FyZCUyMGNlcmVtb255fGVufDB8fHx8MTc2MjI1NDk4NXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "award ceremony"
     }
   ]
