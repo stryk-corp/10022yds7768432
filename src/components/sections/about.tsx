@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Users } from 'lucide-react';
 
 const LeadershipCard = () => (
-  <Card className="shadow-lg">
+  <Card className="shadow-lg bg-card/80 backdrop-blur-sm">
     <CardHeader>
       <CardTitle className="text-xl text-primary">Leadership</CardTitle>
     </CardHeader>
@@ -35,6 +35,7 @@ const LeadershipCard = () => (
 );
 
 const aboutHeroBg = getImage('about_hero_bg');
+const aboutContentBg = getImage('about_content_bg');
 
 export default function About() {
   return (
@@ -54,11 +55,21 @@ export default function About() {
             </div>
           </div>
         )}
-      <div className="py-16 lg:py-24">
-        <div className="container mx-auto px-4">
+      <div className="relative py-16 lg:py-24">
+        {aboutContentBg && (
+          <Image
+            src={aboutContentBg.imageUrl}
+            alt={aboutContentBg.description}
+            fill
+            className="object-cover object-top"
+            data-ai-hint={aboutContentBg.imageHint}
+          />
+        )}
+        <div className="absolute inset-0 bg-background/90 backdrop-blur-sm" />
+        <div className="relative z-10 container mx-auto px-4">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
             <div className="lg:col-span-2">
-              <div className="space-y-4 text-lg leading-relaxed text-foreground/80">
+              <div className="space-y-4 text-lg leading-relaxed text-foreground/80 bg-card/50 p-6 rounded-lg shadow-inner">
                 <p>
                   The FCT YOUTH & SPORT DEVELOPMENT SECRETARIAT (FCTAYDS) is an administrative structure under the Federal Capital Territory Administration (FCTA) established in 2024 by President Bola Ahmed Tinubu, GCFR. Also approving the appointment of Mandate Secretary Hon. Ango Abdullahi Suleiman and the Permanent Secretary Mrs. Nathan Nancy.
                 </p>
@@ -71,7 +82,7 @@ export default function About() {
               </div>
 
               <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
-                <Card className="bg-card/50">
+                <Card className="bg-card/80 backdrop-blur-sm">
                   <CardHeader>
                     <CardTitle className="text-lg text-primary">Our Vision</CardTitle>
                   </CardHeader>
@@ -81,7 +92,7 @@ export default function About() {
                     </p>
                   </CardContent>
                 </Card>
-                <Card className="bg-card/50">
+                <Card className="bg-card/80 backdrop-blur-sm">
                   <CardHeader>
                     <CardTitle className="text-lg text-primary">Our Mission</CardTitle>
                   </CardHeader>
@@ -91,7 +102,7 @@ export default function About() {
                     </p>
                   </CardContent>
                 </Card>
-                <Card className="bg-card/50 sm:col-span-2">
+                <Card className="bg-card/80 backdrop-blur-sm sm:col-span-2">
                   <CardHeader>
                     <CardTitle className="text-lg text-primary">Core Mandate</CardTitle>
                   </CardHeader>
@@ -113,3 +124,4 @@ export default function About() {
     </section>
   );
 }
+    
