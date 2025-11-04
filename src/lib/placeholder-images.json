@@ -13,6 +13,12 @@
       "imageHint": "abuja city gate"
     },
     {
+      "id": "about_hero_bg",
+      "description": "Abstract background for the about section",
+      "imageUrl": "https://images.unsplash.com/photo-1669295384050-a1d4357bd1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzYyMTk4NjY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract background"
+    },
+    {
       "id": "leadership_1",
       "description": "Portrait of Mandate Secretary",
       "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjIyMTM5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -41,6 +47,18 @@
       "description": "Portrait of Deputy Speaker",
       "imageUrl": "https://images.unsplash.com/photo-1615538785945-6625ccdb4b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MjE5NDg2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "portrait woman"
+    },
+    {
+      "id": "leadership_6",
+      "description": "Portrait of FCT Minister",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjIyMTM5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "leadership_7",
+      "description": "Portrait of FCT Minister of State",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjIyMTM5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait man"
     },
     {
       "id": "media_1",
