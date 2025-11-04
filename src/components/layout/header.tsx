@@ -7,7 +7,7 @@ import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { navLinks, topNavLinks, getImage } from '@/lib/data';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 const fctaLogo = getImage('fcta_logo');
 
@@ -87,6 +87,9 @@ const MobileMenu = () => (
       </Button>
     </SheetTrigger>
     <SheetContent side="left">
+      <SheetHeader>
+        <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+      </SheetHeader>
       <div className="flex flex-col gap-4 p-4">
         <Link href="/" className="mb-4 flex items-center gap-2">
            {fctaLogo && (
