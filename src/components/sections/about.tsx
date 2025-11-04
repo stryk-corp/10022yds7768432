@@ -15,7 +15,7 @@ const LeadershipCard = () => (
       {leadership.map((person) => {
         const image = getImage(person.imageId);
         return (
-          <div key={person.title} className="flex items-center gap-4">
+          <div key={person.name} className="flex items-center gap-4">
             <Avatar className="h-14 w-14">
               {image && <AvatarImage src={image.imageUrl} alt={person.name} data-ai-hint={image.imageHint} />}
               <AvatarFallback><Users className="h-6 w-6" /></AvatarFallback>
