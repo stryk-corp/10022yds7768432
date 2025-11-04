@@ -31,6 +31,18 @@
       "imageHint": "portrait person"
     },
     {
+      "id": "leadership_4",
+      "description": "Portrait of FCT Youth Speaker",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjIyMTM5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "leadership_5",
+      "description": "Portrait of Deputy Speaker",
+      "imageUrl": "https://images.unsplash.com/photo-1615538785945-6625ccdb4b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MjE5NDg2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait woman"
+    },
+    {
       "id": "media_1",
       "description": "Photo from a youth event",
       "imageUrl": "https://images.unsplash.com/photo-1531058020387-3be344556be6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NjIyNzUzMzd8MA&ixlib=rb-4.1.0&q=80&w=1080",

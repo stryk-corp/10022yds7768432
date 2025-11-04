@@ -18,8 +18,8 @@ export const topNavLinks = [
 
 export const stats = [
   { label: 'Youth Population (est.)', value: '1,200,000' },
-  { label: 'Projects Completed', value: '128' },
-  { label: 'Active Programs', value: '34' },
+  { label: 'Projects Completed', value: '128+' },
+  { label: 'Staff Strength', value: '422' },
   { label: 'Registered Orgs', value: '512' },
 ];
 
@@ -27,10 +27,12 @@ export const leadership = [
   { name: 'Hon. Ango Abdullahi Suleiman', title: 'Mandate Secretary', imageId: 'leadership_1' },
   { name: 'Mrs. Nathan Nancy', title: 'Permanent Secretary', imageId: 'leadership_2' },
   { name: '—', title: 'Director of Youth', imageId: 'leadership_3' },
+  { name: 'Rt. Hon. Japhet Sha\'agi Kineze', title: 'FCT Youth Speaker', imageId: 'leadership_4' },
+  { name: 'Hon. Amb Esther Apkovi', title: 'Deputy Speaker', imageId: 'leadership_5' },
 ];
 
 export const parliamentSpeakers = [
-    { title: 'Speaker', name: 'Rt. Hon. Japhet Sha\'agi Kineze' },
+    { title: 'Mr. Speaker', name: "Rt. Hon. Japhet Sha'agi Kineze" },
     { title: 'Deputy Speaker', name: 'Hon. Amb Esther Apkovi' }
 ]
 

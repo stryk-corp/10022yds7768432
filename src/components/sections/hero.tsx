@@ -13,11 +13,11 @@ const QuickActions = () => (
       <Button asChild variant="secondary" className="justify-start bg-white/95 text-primary hover:bg-white h-auto whitespace-normal text-left">
         <Link href="#register">Register Your Youth Organisation</Link>
       </Button>
-      <Button asChild variant="secondary" className="justify-start bg-white/20 text-white hover:bg-white/30">
+      <Button asChild variant="secondary" className="justify-start bg-white/20 text-white hover:bg-white/30 h-auto whitespace-normal text-left">
         <Link href="#join">Join the Youth Parliament</Link>
       </Button>
       <Button asChild variant="secondary" className="justify-start bg-white/20 text-white hover:bg-white/30">
-        <Link href="#volunteer">Volunteer & Support</Link>
+        <Link href="#opportunities">Explore Opportunities</Link>
       </Button>
     </div>
   </div>

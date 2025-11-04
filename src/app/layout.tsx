@@ -4,8 +4,8 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'FCTAYDS Youth Connect',
-  description: 'Empowering Tomorrow\'s Leaders Today in the Federal Capital Territory',
+  title: 'FCT Youth Connect',
+  description: "Empowering Tomorrow's Leaders Today in the Federal Capital Territory",
 };
 
 export default function RootLayout({
