@@ -39,7 +39,7 @@
     {
       "id": "leadership_3",
       "description": "Placeholder portrait for Director of Youth",
-      "imageUrl": "https://images.unsplash.com/photo-1650057861788-b6b8606b77ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjIxOTA3NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650057861788-b6b8606b77ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjIxOTA3NTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "portrait person"
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "leadership_5",
       "description": "Portrait of Deputy Speaker",
-      "imageUrl": "https://images.unsplash.com/photo-1615538785945-6625ccdb4b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MjE5NDg2N3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/stryk-corp/img-repo/refs/heads/main/esther%20akpovi.jpg",
       "imageHint": "portrait woman"
     },
     {
@@ -69,13 +69,13 @@
     {
       "id": "media_1",
       "description": "Photo from a youth event",
-      "imageUrl": "https://images.unsplash.com/photo-1531058020387-3be344556be6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NjIyNzUzMzd8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1531058020387-3be344556be6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NjIyNzUzMzd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "community event"
     },
     {
       "id": "media_2",
       "description": "Photo from a sports program",
-      "imageUrl": "https://images.unsplash.com/photo-1490326149782-dd42fa59bd9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx5b3V0aCUyMHNwb3J0c3xlbnwwfHx8fDE3NjIyOTI0MjZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1490326149782-dd42fa59bd9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx5b3V0aCUyMHNwb3J0c3xlbnwwfHx8fDE3NjIyOTI0MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "youth sports"
     },
     {
