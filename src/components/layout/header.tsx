@@ -14,7 +14,7 @@ const fctaLogo = getImage('fcta_logo');
 const TopBar = () => (
   <div className="bg-brand-dark-green text-white/80">
     <div className="container mx-auto flex h-auto min-h-14 items-center justify-between px-4 py-2 text-sm md:h-14 md:py-0">
-      <div className="flex flex-1 items-center gap-3 overflow-hidden">
+      <div className="flex min-w-0 flex-1 items-center gap-3">
         {fctaLogo && (
           <Image
             src={fctaLogo.imageUrl}
@@ -25,7 +25,7 @@ const TopBar = () => (
             data-ai-hint={fctaLogo.imageHint}
           />
         )}
-        <div className="flex-1 overflow-hidden">
+        <div className="min-w-0 flex-1">
           <div className="truncate font-semibold text-white text-xs sm:text-sm">FEDERAL CAPITAL TERRITORY ADMINISTRATION</div>
           <div className="truncate text-xs opacity-80">Youth & Sports Development Secretariat</div>
         </div>
