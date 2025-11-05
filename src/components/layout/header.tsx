@@ -128,7 +128,7 @@ const MobileMenu = () => (
 
 export default function Header() {
   return (
-    <header>
+    <header className="relative z-50">
       <TopBar />
       <MainNav />
     </header>
