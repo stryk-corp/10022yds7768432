@@ -7,7 +7,7 @@ import { getImage } from '@/lib/data';
 const fctaLogo = getImage('fcta_logo');
 
 export const metadata: Metadata = {
-  title: 'FCT Youth Connect',
+  title: 'FCTAYDS',
   description: "Empowering Tomorrow's Leaders Today in the Federal Capital Territory",
   icons: {
     icon: fctaLogo?.imageUrl || '/favicon.ico',
