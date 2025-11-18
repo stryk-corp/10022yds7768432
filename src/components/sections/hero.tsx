@@ -38,7 +38,7 @@ export default function Hero() {
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark-green/90 via-primary/50 to-transparent" />
-        <div className="relative z-10 container mx-auto flex h-full items-end justify-between px-4 pb-12 md:pb-20">
+        <div className="relative z-20 container mx-auto flex h-full items-end justify-between px-4 pb-12 md:items-center md:pt-16">
           <div className="flex flex-col items-start gap-8 md:flex-row md:items-end md:justify-between w-full">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-lg">
@@ -56,9 +56,14 @@ export default function Hero() {
                 </Button>
               </div>
             </div>
-            <QuickActions />
+            <div className="hidden md:block">
+              <QuickActions />
+            </div>
           </div>
         </div>
+      </div>
+      <div className="relative z-20 container mx-auto px-4 -mt-16 mb-16 md:hidden">
+        <QuickActions />
       </div>
     </section>
   );

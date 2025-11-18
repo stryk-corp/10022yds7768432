@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export default function Stats() {
   return (
-    <section className="relative z-20 -mt-16 bg-transparent pb-16">
+    <section className="relative bg-transparent pb-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {stats.map((stat) => (
