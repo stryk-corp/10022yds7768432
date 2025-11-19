@@ -8,37 +8,61 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { leadership, getImage } from '@/lib/data';
 import type { LeadershipMember } from '@/lib/data';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Users, X, ArrowLeft } from 'lucide-react';
+import { Users, X, ArrowLeft, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
-const LeadershipList = ({ onSelectLeader }: { onSelectLeader: (leader: LeadershipMember) => void }) => (
-  <Card className="shadow-lg bg-card/80 backdrop-blur-sm">
-    <CardHeader>
-      <CardTitle className="text-xl text-primary">Leadership</CardTitle>
-    </CardHeader>
-    <CardContent className="space-y-6">
-      {leadership.map((person) => {
-        const image = getImage(person.imageId);
-        return (
-          <button
-            key={person.name}
-            className="flex w-full items-center gap-4 text-left transition-colors hover:bg-muted/50 p-2 rounded-md"
-            onClick={() => onSelectLeader(person)}
-          >
-            <Avatar className="h-14 w-14">
-              {image && <AvatarImage src={image.imageUrl} alt={person.name} data-ai-hint={image.imageHint} />}
-              <AvatarFallback><Users className="h-6 w-6" /></AvatarFallback>
-            </Avatar>
-            <div>
-              <div className="font-semibold text-foreground">{person.name}</div>
-              <div className="text-sm text-foreground/70">{person.title}</div>
-            </div>
-          </button>
-        );
-      })}
-    </CardContent>
-  </Card>
-);
+const LeadershipList = ({ onSelectLeader }: { onSelectLeader: (leader: LeadershipMember) => void }) => {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const filteredLeadership = leadership.filter(person =>
+        person.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        person.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    return (
+        <Card className="shadow-lg bg-card/80 backdrop-blur-sm">
+            <CardHeader className="pb-4">
+                <CardTitle className="text-xl text-primary mb-4">Leadership</CardTitle>
+                <div className="relative">
+                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Input
+                        type="search"
+                        placeholder="Search leaders..."
+                        className="pl-10"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                    />
+                </div>
+            </CardHeader>
+            <CardContent className="space-y-6 pt-2">
+                {filteredLeadership.length > 0 ? (
+                    filteredLeadership.map((person) => {
+                        const image = getImage(person.imageId);
+                        return (
+                            <button
+                                key={person.name}
+                                className="flex w-full items-center gap-4 text-left transition-colors hover:bg-muted/50 p-2 rounded-md"
+                                onClick={() => onSelectLeader(person)}
+                            >
+                                <Avatar className="h-14 w-14">
+                                    {image && <AvatarImage src={image.imageUrl} alt={person.name} data-ai-hint={image.imageHint} />}
+                                    <AvatarFallback><Users className="h-6 w-6" /></AvatarFallback>
+                                </Avatar>
+                                <div>
+                                    <div className="font-semibold text-foreground">{person.name}</div>
+                                    <div className="text-sm text-foreground/70">{person.title}</div>
+                                </div>
+                            </button>
+                        );
+                    })
+                ) : (
+                    <p className="text-center text-muted-foreground py-4">No leaders found.</p>
+                )}
+            </CardContent>
+        </Card>
+    );
+};
 
 const LeadershipProfile = ({ leader, onBack }: { leader: LeadershipMember; onBack: () => void }) => {
   const image = getImage(leader.imageId);
@@ -166,6 +190,4 @@ export default function About() {
     </section>
   );
 }
-    
-
     
