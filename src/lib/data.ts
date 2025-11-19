@@ -1,5 +1,18 @@
 import { PlaceHolderImages } from './placeholder-images';
 import type { ImagePlaceholder } from './placeholder-images';
+import leadershipData from './leadership.json';
+
+export interface LeadershipMember {
+  id: string;
+  name: string;
+  title: string;
+  imageId: string;
+  bio: string;
+  socials?: {
+    twitter?: string;
+    linkedin?: string;
+  };
+}
 
 export const navLinks = [
   { href: '#home', label: 'Home' },
@@ -23,15 +36,7 @@ export const stats = [
   { label: 'Registered Orgs', value: '512' },
 ];
 
-export const leadership = [
-  { name: 'Ezenwo Nyesom Wike', title: 'FCT Minister', imageId: 'leadership_6' },
-  { name: 'Mariya Mahmoud Bunkure', title: 'FCT Minister of State', imageId: 'leadership_7' },
-  { name: 'Hon. Ango Abdullahi Suleiman', title: 'Mandate Secretary', imageId: 'leadership_1' },
-  { name: 'Mrs. Nathan Nancy', title: 'Permanent Secretary', imageId: 'leadership_2' },
-  { name: '—', title: 'Director of Youth', imageId: 'leadership_3' },
-  { name: 'Rt. Hon. Japhet Sha\'agi Kineze', title: 'FCT Youth Speaker', imageId: 'leadership_4' },
-  { name: 'Hon. Amb Esther Apkovi', title: 'Deputy Speaker', imageId: 'leadership_5' },
-];
+export const leadership: LeadershipMember[] = leadershipData;
 
 export const parliamentSpeakers = [
     { title: 'Mr. Speaker', name: "Rt. Hon. Japhet Sha'agi Kineze" },
@@ -66,3 +71,5 @@ export const footerLinks = [
 ];
 
 export const getImage = (id: string): ImagePlaceholder | undefined => PlaceHolderImages.find(img => img.id === id);
+
+    

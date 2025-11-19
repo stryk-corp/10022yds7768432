@@ -1,0 +1,58 @@
+
+[
+  {
+    "id": "wike",
+    "name": "Ezenwo Nyesom Wike",
+    "title": "FCT Minister",
+    "imageId": "leadership_6",
+    "bio": "Ezenwo Nyesom Wike is the current Minister of the Federal Capital Territory of Nigeria. He previously served as the Governor of Rivers State from 2015 to 2023. His administration is focused on infrastructural development and urban renewal within the FCT."
+  },
+  {
+    "id": "bunkure",
+    "name": "Mariya Mahmoud Bunkure",
+    "title": "FCT Minister of State",
+    "imageId": "leadership_7",
+    "bio": "Dr. Mariya Mahmoud Bunkure serves as the Minister of State for the Federal Capital Territory. She brings a wealth of experience in public service and is a key figure in the development and administration of the FCT."
+  },
+  {
+    "id": "suleiman",
+    "name": "Hon. Ango Abdullahi Suleiman",
+    "title": "Mandate Secretary",
+    "imageId": "leadership_1",
+    "bio": "Hon. Ango Abdullahi Suleiman is the Mandate Secretary for the FCT Youth & Sports Development Secretariat. He is passionate about youth empowerment and creating opportunities for young people in sports and leadership.",
+    "socials": {
+      "twitter": "https://twitter.com/angoabdullahi",
+      "linkedin": "https://linkedin.com/in/ango-suleiman"
+    }
+  },
+  {
+    "id": "nancy",
+    "name": "Mrs. Nathan Nancy",
+    "title": "Permanent Secretary",
+    "imageId": "leadership_2",
+    "bio": "Mrs. Nathan Nancy is the Permanent Secretary at the FCT Youth & Sports Development Secretariat. She plays a crucial role in the administrative and operational functions of the secretariat, ensuring the smooth implementation of youth and sports policies."
+  },
+  {
+    "id": "youth_director",
+    "name": "—",
+    "title": "Director of Youth",
+    "imageId": "leadership_3",
+    "bio": "The Director of Youth is responsible for overseeing all youth development programs and initiatives within the FCT. This position is central to designing and executing strategies that empower the youth of the territory."
+  },
+  {
+    "id": "kineze",
+    "name": "Rt. Hon. Japhet Sha'agi Kineze",
+    "title": "FCT Youth Speaker",
+    "imageId": "leadership_4",
+    "bio": "As the Speaker of the FCT Youth Parliament, Rt. Hon. Japhet Sha'agi Kineze represents the voice of the youth. He is a dedicated advocate for youth inclusion in governance and policy-making."
+  },
+  {
+    "id": "apkovi",
+    "name": "Hon. Amb Esther Apkovi",
+    "title": "Deputy Speaker",
+    "imageId": "leadership_5",
+    "bio": "Hon. Amb Esther Apkovi serves as the Deputy Speaker of the FCT Youth Parliament. She works closely with the Speaker to champion youth causes and facilitate parliamentary proceedings."
+  }
+]
+
+    

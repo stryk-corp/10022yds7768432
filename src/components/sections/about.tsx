@@ -1,12 +1,17 @@
-import React from 'react';
+
+'use client';
+
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { leadership, getImage } from '@/lib/data';
+import type { LeadershipMember } from '@/lib/data';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Users } from 'lucide-react';
+import { Users, X, ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
-const LeadershipCard = () => (
+const LeadershipList = ({ onSelectLeader }: { onSelectLeader: (leader: LeadershipMember) => void }) => (
   <Card className="shadow-lg bg-card/80 backdrop-blur-sm">
     <CardHeader>
       <CardTitle className="text-xl text-primary">Leadership</CardTitle>
@@ -15,7 +20,11 @@ const LeadershipCard = () => (
       {leadership.map((person) => {
         const image = getImage(person.imageId);
         return (
-          <div key={person.name} className="flex items-center gap-4">
+          <button
+            key={person.name}
+            className="flex w-full items-center gap-4 text-left transition-colors hover:bg-muted/50 p-2 rounded-md"
+            onClick={() => onSelectLeader(person)}
+          >
             <Avatar className="h-14 w-14">
               {image && <AvatarImage src={image.imageUrl} alt={person.name} data-ai-hint={image.imageHint} />}
               <AvatarFallback><Users className="h-6 w-6" /></AvatarFallback>
@@ -24,20 +33,49 @@ const LeadershipCard = () => (
               <div className="font-semibold text-foreground">{person.name}</div>
               <div className="text-sm text-foreground/70">{person.title}</div>
             </div>
-          </div>
+          </button>
         );
       })}
-      <Link href="#leadership" className="mt-4 inline-block text-sm text-accent underline transition-colors hover:text-primary">
-        Full Directory
-      </Link>
     </CardContent>
   </Card>
 );
+
+const LeadershipProfile = ({ leader, onBack }: { leader: LeadershipMember; onBack: () => void }) => {
+  const image = getImage(leader.imageId);
+  return (
+    <Card className="shadow-lg bg-card/80 backdrop-blur-sm">
+      <CardHeader className="relative">
+        <Button onClick={onBack} variant="ghost" size="icon" className="absolute top-4 left-4">
+          <ArrowLeft className="h-5 w-5" />
+        </Button>
+        <div className="flex flex-col items-center pt-8">
+          <Avatar className="h-24 w-24 border-4 border-primary">
+            {image && <AvatarImage src={image.imageUrl} alt={leader.name} data-ai-hint={image.imageHint} />}
+            <AvatarFallback><Users className="h-10 w-10" /></AvatarFallback>
+          </Avatar>
+          <CardTitle className="mt-4 text-center text-xl text-primary">{leader.name}</CardTitle>
+          <p className="text-center text-sm text-foreground/70">{leader.title}</p>
+        </div>
+      </CardHeader>
+      <CardContent className="space-y-4 px-6 pb-6">
+        <p className="text-base text-foreground/80 leading-relaxed text-justify">{leader.bio}</p>
+        {leader.socials && (
+            <div className='flex items-center justify-center gap-4 pt-4'>
+                {leader.socials.twitter && <Link href={leader.socials.twitter} target='_blank' className='text-foreground/70 hover:text-primary'>Twitter</Link>}
+                {leader.socials.linkedin && <Link href={leader.socials.linkedin} target='_blank' className='text-foreground/70 hover:text-primary'>LinkedIn</Link>}
+            </div>
+        )}
+      </CardContent>
+    </Card>
+  );
+}
 
 const aboutHeroBg = getImage('about_hero_bg');
 const aboutContentBg = getImage('about_content_bg');
 
 export default function About() {
+  const [selectedLeader, setSelectedLeader] = useState<LeadershipMember | null>(null);
+
   return (
     <section id="about" className="bg-muted/30">
         {aboutHeroBg && (
@@ -116,7 +154,11 @@ export default function About() {
             </div>
 
             <aside>
-              <LeadershipCard />
+              {selectedLeader ? (
+                <LeadershipProfile leader={selectedLeader} onBack={() => setSelectedLeader(null)} />
+              ) : (
+                <LeadershipList onSelectLeader={setSelectedLeader} />
+              )}
             </aside>
           </div>
         </div>
@@ -124,4 +166,6 @@ export default function About() {
     </section>
   );
 }
+    
+
     
