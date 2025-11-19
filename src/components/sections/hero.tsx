@@ -26,7 +26,7 @@ const QuickActions = () => (
 export default function Hero() {
   return (
     <section id="home" className="relative text-white">
-      <div className="h-[80vh] w-full min-h-[600px] md:h-[calc(100vh-120px)]">
+    <div className="h-[65vh] md:h-[75vh] lg:h-[calc(100vh-120px)] w-full min-h-[480px]">
         {heroBg && (
           <Image
             src={heroBg.imageUrl}
